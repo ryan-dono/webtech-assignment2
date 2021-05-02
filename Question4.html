@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise json</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="picture.css">
+
+
+</head>
+<body>
+<!-- Picture Box top page -->
+    <div id="panel">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" class="rounded mx-auto d-block" width="100%" height="500px">
+        <div id="imgtext"></div>
+      </div>
+<!-- Header -->
+<div class="jumbotron text-center">
+<div class="header" id="myHeader">
+  <h1 class="text-uppercase">Banner management</h1>
+  <div id="flip">Click here to show picture box above</div>
+  <p>Click on the picture to display picture at box above.</p>
+  <p>Click on the buttons to change the grid view.</p>
+ 
+  <button class="btn " onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="/picture/1.jpg" class="img-rounded" style="width:100%" onclick="myFunction(this);">
+    <img src="/picture/3.jpg" style="width:100%" data-toggle="tooltip" title="This Is Brooke from ONE PIECE!" onclick="myFunction(this);">
+    <img src="/picture/2.jpg" style="width:100%" onclick="myFunction(this);">
+    <img src="/picture/4.jpg" style="width:100%" onclick="myFunction(this);">
+  
+  </div>
+  <div class="column">
+    <img src="/picture/11.jpg" style="width:100%"  data-toggle="tooltip" title="This Is Saitama from One Punch Man!"   onclick="myFunction(this);">
+    <img src="/picture/22.jpg" style="width:100%"  onclick="myFunction(this);">
+    <img src="/picture/33.jpg" style="width:100%"  onclick="myFunction(this);">
+    <img src="/picture/44.png" style="width:100%"  onclick="myFunction(this);">
+  </div>  
+  <div class="column">
+    <img src="/picture/444.png" style="width:100%"  data-toggle="tooltip" title="This Is Sukuna from Jujutsu Kaisen!" onclick="myFunction(this);">
+    <img src="/picture/333.jpg" style="width:100%"  onclick="myFunction(this);">
+    <img src="/picture/222.jpg" style="width:100%"  onclick="myFunction(this);">
+    <img src="/picture/111.jpg" style="width:100%"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/picture/41.jpg" style="width:100%"  data-toggle="tooltip" title="This Is Itachi from Naruto!" onclick="myFunction(this);">
+    <img src="/picture/42.jpg" style="width:100%"  onclick="myFunction(this);">
+    <img src="/picture/43.jpg" style="width:100%"  onclick="myFunction(this);">
+    <img src="/picture/411.jpg" style="width:100%"  onclick="myFunction(this);">
+  </div>
+ 
+</div>
+</div>
+
+<script src="scriptPicture.js"></script>
+</body>
+</html>
