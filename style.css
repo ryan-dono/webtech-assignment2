@@ -1,0 +1,112 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	background: #00A9D4;
+	height: 60px;
+	position: relative;
+}
+
+.icon {
+	cursor: pointer;
+	margin-right: 50px;
+	line-height: 60px;
+}
+
+.icon span {
+	background: #f00;
+	padding: 7px;
+	border-radius: 50%;
+	color: #fff;
+	vertical-align: top;
+	margin-left: -25px;
+}
+
+.icon img {
+	display: inline-block;
+	width: 40px;
+	margin-top: 20px;
+}
+
+.icon:hover {
+	opacity: .7;
+}
+
+.logo {
+	flex: 1;
+	margin-left: 50px;
+	color: #eee;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+#Video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.notifi-box {
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+	background-color: #00A9D4;
+	position: absolute;
+	top: 63px;
+	right: 35px;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notifi-item {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 15px 5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+
+.notifi-item .text p {
+	color: rgb(0, 0, 0);
+	font-size: 12px;
+}
+
+.notifi-item:hover {
+	background-color: #eee;
+}
+
